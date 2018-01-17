@@ -5,9 +5,10 @@ let container = $('#die-container')
 class Die {
     constructor (value) {
         this.value = value
+        this.id = dieOnScreen.length
         this.div = $(`<div></div>`);
         this.div.attr('class','die');
-        this.div.attr('id', dieOnScreen.length + 1)
+        this.div.attr('id', this.id)
         this.p = $(`<p></p>`);
         this.div.append(this.p)
         container.append(this.div);
@@ -15,6 +16,9 @@ class Die {
         this.div.click( () => {
             this.roll()
         });
+        this.div.dblclick( () => {
+            $(`#${this.id}`).remove()
+        })
 
 
     }

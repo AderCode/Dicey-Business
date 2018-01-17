@@ -11,7 +11,7 @@ This lab will combine principles of HTML, CSS, JavaScript, Accessing/Creating/Mo
 * You can use either the DOM or JQuery, but please be consistent and stick with one.
 
 # 1. Create an index.html file, a JS file, and a CSS file.
-2. Implement the objectives of the lab as follows:
+#2. Implement the objectives of the lab as follows:
     * The page must contain a button labeled Generate Die. You can go ahead and put this in your HTML. (No reason to make this harder by creating it in code when you can just put it in your HTML)
     * Clicking the button should create a new Die object (thus causing a div to be added to the screen with a random number 1-6)
     * The dice should show up on your page in a grid, similar to the layout of DOM DOM DOMMMMMMM.
@@ -25,6 +25,6 @@ This lab will combine principles of HTML, CSS, JavaScript, Accessing/Creating/Mo
 **_Above & Beyond_**
 Try extending the functionality of this lab to support the following features. They are listed in order from easiest to hardest to implement.
 * Create a `sumDice` function and a button that triggers it. It should add up the current face value of all the dice on the page and display an alert with the sum.
-* Add a feature where clicking on a die on the page causes just that one die to roll, updating its face value
-* Add a feature where double clicking on a die on the page causes that die to be removed from the page
+#* Add a feature where clicking on a die on the page causes just that one die to roll, updating its face value
+ Add a feature where double clicking on a die on the page causes that die to be removed from the page
     * Be careful to take appropriate measures so that the `sumDice` function still reports the correct sum after you delete a die. You need to not only remove the on-screen representation of the Die on the screen, but also remove the Die object from the array as well.
