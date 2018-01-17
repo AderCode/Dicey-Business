@@ -6,9 +6,13 @@ rollBtn.addEventListener('click', rollDice);
 
 
 function addDice() {
-    alert(`The die has been added`)
+    alert(`A value of ${getRandomVal(0, 100)}`)
 };
 
 function rollDice() {
     alert(`The die have been cast`);
 };
+
+function getRandomVal(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min
+}
