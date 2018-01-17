@@ -10,7 +10,7 @@ This lab will combine principles of HTML, CSS, JavaScript, Accessing/Creating/Mo
 * When a new Die is created, it should automatically create a div, call its `roll` method, and put the div on the screen
 * You can use either the DOM or JQuery, but please be consistent and stick with one.
 
-1. Create an index.html file, a JS file, and a CSS file.
+# 1. Create an index.html file, a JS file, and a CSS file.
 2. Implement the objectives of the lab as follows:
     * The page must contain a button labeled Generate Die. You can go ahead and put this in your HTML. (No reason to make this harder by creating it in code when you can just put it in your HTML)
     * Clicking the button should create a new Die object (thus causing a div to be added to the screen with a random number 1-6)
