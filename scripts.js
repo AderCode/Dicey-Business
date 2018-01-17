@@ -11,9 +11,9 @@ class Die {
     this.div.attr("class", "die");
     this.div.attr("id", this.id);
     this.p = $(`<p></p>`);
-    this.div.append(this.p);
+    this.div.append(this.dieFace());
     container.append(this.div);
-    this.p.text(value);
+    // this.p.text('&#9856;');
     this.div.click(() => {
       this.roll();
     });
@@ -28,13 +28,31 @@ class Die {
   roll() {
     this.newValue = getRandomVal(1, 7);
     this.value = this.newValue;
-    this.p.text(this.newValue);
+    this.div.empty().append(this.dieFace());
     console.log(this);
   }
 
-    getIndex(index) {
-    return index == this.div.id;
-}
+    dieFace(unicode) {
+        if (this.value === 1) {
+            unicode = '&#9856;';
+            return unicode;
+        } else if (this.value === 2) {
+            unicode = '&#9857;';
+            return unicode;
+        } else if (this.value === 3) {
+            unicode = '&#9858;';
+            return unicode;
+        } else if (this.value === 4) {
+            unicode = '&#9859;';
+            return unicode;
+        } else if (this.value === 5) {
+            unicode = '&#9860;';
+            return unicode;
+        } else if (this.value === 6) {
+            unicode = '&#9861;';
+            return unicode;
+        }
+    }
 }
 
 let addBtn = $("#add-die");
